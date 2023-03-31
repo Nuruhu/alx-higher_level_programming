@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""fetches https://intranet.hbtn.io/status using requests"""
+''' fetches https://intranet.hbtn.io/status '''
 import requests
 
 
 if __name__ == "__main__":
-    """fetches https://intranet.hbtn.io/status using requests"""
-    r = requests.get('https://intranet.hbtn.io/status')
-    print("Body response:")
-    print("\t- type: {}".format(type(r.text)))
-    print("\t- content: {}".format(r.text))
+    req = requests.get('https://intranet.hbtn.io/status')
+    text = req.text
+    print('Body response:')
+    print('\t- type: {}'.format(type(text)))
+    print('\t- content: {}'.format(text))
